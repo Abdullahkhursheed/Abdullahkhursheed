@@ -51,3 +51,23 @@ CREATE TABLE `staff table` (
   `  role` varchar(45) NOT NULL,
   PRIMARY KEY (`stafID`,` name`)
 )
+CREATE TABLE `admission table` (
+  `AdmissionID` int NOT NULL,
+  `PatientName` varchar(45) NOT NULL,
+  `Admissiondate` varchar(45) NOT NULL,
+  `DischargeDate` int NOT NULL,
+  PRIMARY KEY (`AdmissionID`)
+) SELECT * FROM rafaydb2.employee;
+CREATE TABLE `employee` (
+  `EmpId` int NOT NULL,
+  `EmpName` varchar(60) NOT NULL,
+  `EmpAge` int NOT NULL,
+  `EmpDept` varchar(45) NOT NULL,
+  PRIMARY KEY (`EmpId`)
+) SELECT * FROM rafaydb2.`wards table`;
+CREATE TABLE `wards table` (
+  `WardID` int NOT NULL,
+  `WardName` varchar(45) NOT NULL,
+  PRIMARY KEY (`WardID`)
+)
+
